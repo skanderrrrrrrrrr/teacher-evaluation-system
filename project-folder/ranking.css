@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #00c6ff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.table-container {
+    background: rgba(255,255,255,0.08);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+thead {
+    background: rgba(0,198,255,0.3);
+}
+
+thead th {
+    color: #fff;
+    font-size: 1.1rem;
+    padding: 12px 15px;
+    text-align: center;
+}
+
+tbody td {
+    padding: 12px 15px;
+    text-align: center;
+    vertical-align: middle;
+    border-bottom: 1px solid rgba(255,255,255,0.15);
+}
+
+a {
+    text-decoration: none;
+    color: #00c6ff;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #00f0ff;
+}
+
+.podium {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 60px;
+    margin-bottom: 30px;
+    margin-top : 40px;
+    position: relative;
+}
+
+.podium-name{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:0.5rem;
+    width: 100%;
+}
+
+.podium-card {
+    width: 250px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    background: rgba(255,255,255,0.1);
+}
+
+.podium-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.3);
+}
+
+.podium-1 { 
+    background: rgba(255,215,0,0.3); 
+    height: 160px; 
+    order: 2;
+    z-index: 3;
+}
+.podium-2 { 
+    background: rgba(192,192,192,0.3); 
+    height: 140px;
+    order: 1;
+    z-index: 2;
+}
+.podium-3 { 
+    background: rgba(205,127,50,0.3); 
+    height: 120px;
+    order: 3;
+    z-index: 2;
+}
+
+.podium-rank { font-size: 1.5rem; font-weight: bold; }
+.podium-name { font-size: 1.2rem; font-weight: 600; margin: 5px 0; }
+.podium-score { font-size: 1.3rem; font-weight: bold; color: #00c6ff; }
+
+tbody tr {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+tbody tr:hover {
+    transform: translateY(-5px);
+    background: rgba(255,255,255,0.15);
+}
+
+@media (max-width: 768px) {
+    .podium {
+        flex-direction: column;
+        align-items: center;
+    }
+    .podium-card { margin-top: 20px !important; height: auto !important; }
+}

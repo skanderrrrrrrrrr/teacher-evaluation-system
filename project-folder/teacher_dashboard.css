@@ -1,0 +1,137 @@
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: #fff;
+    padding: 40px 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    color: #00c6ff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 25px 30px;
+    border-radius: 18px;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+/* Summary */
+.summary {
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    padding: 25px 30px;
+    margin-bottom: 35px;
+    text-align: center;
+    color: #fff;
+}
+
+.summary h3 {
+    margin: 0 0 20px 0;
+    color: #00c6ff;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.avg-values {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    color: #fff;
+}
+
+.avg-values div {
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    border-radius: 10px;
+    padding: 15px 25px;
+    min-width: 140px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.avg-values div:hover {
+    background: rgba(255,255,255,0.18);
+}
+
+.avg-label {
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 8px;
+}
+
+.avg-score {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #00c6ff;
+    text-shadow: 0 0 5px #00c6ff;
+}
+
+.overall {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #00c6ff;
+    text-shadow: 0 0 8px #00c6ff;
+}
+
+/* Cards */
+.card {
+    background: rgba(255,255,255,0.08);
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    padding: 25px 30px;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    color: #fff;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 18px 35px rgba(0,0,0,0.25);
+}
+
+.ratings {
+    display: flex;
+    gap: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.rating-item .star {
+    color: #f5b50a;
+    font-size: 1.3rem;
+    text-shadow: 0 0 3px #f5b50a;
+}
+
+.comment {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: #ddd;
+    white-space: pre-line;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .ratings {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .avg-values {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
